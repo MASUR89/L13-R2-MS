@@ -1,6 +1,6 @@
-import Header from "./components/Header";
-import ProductList from "./components/ProductList";
-import Footer from "./components/Footer";
+import Header from "./Header";
+import ProductList from "./ProductList";
+import Footer from "./Footer";
 
 function App() {
   return (

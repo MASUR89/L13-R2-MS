@@ -2,24 +2,9 @@ import ProductCard from "./ProductCard";
 
 function ProductList() {
   const products = [
-    {
-      name: "iPhone 15",
-      price: 999,
-      image: "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-15-select-2023?wid=940&hei=1112&fmt=png-alpha&.v=1692912413083",
-      description: "The latest Apple smartphone with A16 Bionic chip."
-    },
-    {
-      name: "Honor",
-      price: 450,
-      image: "https://www.hihonor.com/content/dam/honor/gb/product-list/phone/honor-90/honor-90-black.png",
-      description: "Stylish and powerful smartphone from Honor."
-    },
-    {
-      name: "Samsung Galaxy Watch",
-      price: 299,
-      image: "https://images.samsung.com/is/image/samsung/p6pim/in/sm-r965fzeains/gallery/in-galaxy-watch6-r965-sm-r965fzeains-537114351?$684_547_PNG$",
-      description: "Smartwatch for fitness and productivity."
-    }
+    { name: "iPhone 17 Pro Max", price: 1399, image: "https://kontakt.ge/media/catalog/product/cache/a404967cc40694dc557cd869288440a4/t/m/tm-dg-sbp-1105-sm-26817.webp", description: "The latest Apple smartphone with e-sim." },
+    { name: "Honor X9c", price: 399, image: "https://i.ebayimg.com/images/g/pyIAAeSw2txoysj-/s-l1600.webp", description: "Stylish and powerful smartphone from Honor." },
+    { name: "Samsung Galaxy Watch", price: 299, image: "https://i.ebayimg.com/images/g/QvUAAOSwlsVhFmUH/s-l960.webp", description: "Smartwatch for fitness and productivity." }
   ];
 
   return (
@@ -30,9 +15,9 @@ function ProductList() {
       flexWrap: "wrap",
       padding: "32px"
     }}>
-      {products.map((product, index) => (
+      {products.map(product => (
         <ProductCard
-          key={index}
+          key={product.id}
           name={product.name}
           price={product.price}
           image={product.image}
