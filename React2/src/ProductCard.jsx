@@ -1,7 +1,6 @@
 import { useState } from "react";
 
 function ProductCard({ name, price, image, description }) {
-  const [isHovered, setIsHovered] = useState(false);
 
   return (
     <div
